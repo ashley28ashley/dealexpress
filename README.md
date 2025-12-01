@@ -58,7 +58,7 @@ Créez ces comptes via inscription (`POST /api/auth/register`), puis modifiez le
 - Ne touchez PAS au champ `password` 
 
 ---
-
+'''
 ##  Documentation des endpoints
 
 ### Base URL
@@ -332,19 +332,19 @@ Content-Type: application/json
 
 1. Ouvrez **Insomnia**
 2. **Create** → **Import**
-3. Sélectionnez `DealExpress.insomnia.json`
-4. Toutes les requêtes sont prêtes ! 🎉
+3. Sélectionnez `Insomnia_2025-12-01.yaml'
+4. Toutes les requêtes sont prêtes ! 
 
 ### Configuration du token
 
-**Méthode 1 : Manuelle**
+Méthode 1 : Manuelle
 1. Faites `POST /auth/login`
 2. Copiez le token de la réponse
 3. Dans chaque requête authentifiée, ajoutez le header :
    - Name : `Authorization`
    - Value : `Bearer <votre_token>`
 
-**Méthode 2 : Variable d'environnement** 
+Méthode 2 : Variable d'environnement
 1. Créez un environnement `Local`
 2. Ajoutez les variables :
 ```json
