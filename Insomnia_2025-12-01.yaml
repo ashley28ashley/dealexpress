@@ -1,0 +1,108 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1759482652950
+  modified: 1759482652950
+  description: ""
+collection:
+  - url: http://localhost:3000/api/deals/691cf4e82948edb132d6e74b
+    name: New Request
+    meta:
+      id: req_f71a7b7e7af5433f820fd06ab594790f
+      created: 1760954781825
+      modified: 1764579273898
+      isPrivate: false
+      description: ""
+      sortKey: -1760954781825
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "status": "approved"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+        disabled: false
+      - name: User-Agent
+        value: insomnia/11.6.1
+      - name: Authorization
+        value: Bearer
+          eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTJjZGMwMzVmMjk1YjJlMGQwYWEyYjMiLCJyb2xlIjoibW9kZXJhdG9yIiwiaWF0IjoxNzY0NTQ4MTI3LCJleHAiOjE3NjUxNTI5Mjd9.EzpXomD94acWn1X1j9qQyYepaEF6UL2NmalNPIE2f64
+        description: ""
+        disabled: false
+    authentication:
+      type: bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - name: api
+    meta:
+      id: fld_dc94e5fd37fd4ababcf1e417b93817cd
+      created: 1759482990180
+      modified: 1759482990180
+      sortKey: -1759482990180
+      description: ""
+    children:
+      - url: localhost:3000/product
+        name: New Request
+        meta:
+          id: req_6155defc54d040d1b20a7faf3f44ae83
+          created: 1759483001874
+          modified: 1759500953152
+          isPrivate: false
+          description: ""
+          sortKey: -1759483001874
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            	{
+                "name": "test7",
+                "price": 400
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1759482678889
+    modified: 1759482678889
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1759482678887
+    modified: 1759482678887
+    isPrivate: false
+  subEnvironments:
+    - name: Base Environment
+      meta:
+        id: env_c086fbda77764694aa67700c37918a6b
+        created: 1764581723323
+        modified: 1764581723323
+        isPrivate: false
+        sortKey: 1764581723323
+      data:
+        BASE_URL: http://localhost:3000/api
+        TOKEN: ""
